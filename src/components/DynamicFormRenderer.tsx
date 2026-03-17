@@ -149,7 +149,7 @@ export default function DynamicFormRenderer({
               <Input
                 type="number"
                 placeholder={label}
-                {...field}
+                value={(field.value as number) ?? ""}
                 onChange={(e) => field.onChange(e.target.value ? Number(e.target.value) : "")}
                 className="tabular-nums"
               />
